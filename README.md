@@ -4,6 +4,20 @@
 ## Project Title: Segmentation and Customers' Subscription Analysis
 ---
 
+[Project Overview](#project-overview)
+
+[Data Sources](#data-sources)
+
+[Tools Used](#tools-used)
+
+[Data Cleaning and preparation](#data-cleaning-and-preparation)
+
+[Exporatory Data Analysis](#exporatory-data-analysis)
+
+[Data Analysis and Findings](#data-analysis-and-findings)
+
+[Data Visualization](#data-visualization)
+
 
 ## Project Overview:
 This project focuses on analyzing customer data for a subscription service to identify key customer segments and trends. 
