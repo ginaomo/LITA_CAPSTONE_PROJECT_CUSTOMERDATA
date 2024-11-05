@@ -36,6 +36,81 @@ information on customer demographics, subscription behavior, revenue, and cancel
    - I checked for uniformity in categorical fields like SubscriptionType and Region.
    - Data Transformation: Calculate new fields, such as subscription duration   .
    - Active Status: Create an indicator for active subscriptions based on SubscriptionEnd and Canceled columns.
+ 
+
+
+
+## Data Analysis
+---
+---Total number of Customers by Region---
+
+Select  Region, 
+count(Customerid) as Total_Customers 
+from [dbo].[CustomerData_CP]
+Group by Region
+Order by Region asc
+
+---2. Most popular Subscription type by Customer---
+---
+Select top 1 subscriptiontype,
+Count(Customerid) as Total_Customers
+From [dbo].[CustomerData_CP]
+Group by subscriptiontype 
+Order by Total_Customers desc
+
+
+--3. Customers who Cancelled their Subscription within 6 Months--
+---
+update [dbo].[CustomerData_CP]
+set Canceled = 1
+      where Canceled = 'true'
+update [dbo].[CustomerData_CP]
+set canceled = 0
+where canceled = 'false'
+select count(customerid) as canceled_customers_in_6mnth
+from [dbo].[CustomerData_CP] 
+where Canceled = 1
+and SubscriptionEnd>=dateadd(month,-6,getdate())
+
+
+---4. Average Subscription duration for all Customers---
+---
+Select AVG(datediff(day,subscriptionstart,subscriptionend))
+as avg_subscription_duration
+from [dbo].[CustomerData_CP]
+
+
+---5 Customers with subcription longer than 12 Months---
+---
+Select count(customerid) as suscrption_12_month
+From [dbo].[CustomerData_CP]
+where subscriptionstart<Dateadd(month,-12, getdate())
+
+
+---6. CALCULATE SUBSCRIPTION TYPE BY REVENUE---
+---
+Select subscriptiontype,
+Sum(revenue) as total_revenue 
+From [dbo].[CustomerData_CP]
+Group by subscriptiontype
+
+--7.FIND THE TOP 3 REGIONS BY SUBSCRIPTION--
+--- 
+Select top 3 region,
+Count(customerid) as cancellation_count_top3
+From [dbo].[CustomerData_CP] 
+Where Canceled = 1
+Group by Region
+Order by cancellation_count_top3
+
+
+---8. FIND THE TOTAL NUMBER OF ACTIVE AND CANCELED SUBSCRIPTION---
+---
+select 
+Sum(case when canceled = 1 then 1 else 0 end) as total_canceled,
+Sum(case when canceled = 0 then 1 else 0 end) as total_active
+From [dbo].[CustomerData_CP]
+
 
 
        
