@@ -69,7 +69,13 @@ Select  Region,
 count(Customerid) as Total_Customers 
 from [dbo].[CustomerData_CP]
 Group by Region
-Order by Region asc
+Order by Region asc1
+
+-  East 8488
+-  North 8433
+-  South 8446
+-  West 8420
+
 
 ---2. Most popular Subscription type by Customer---
 
@@ -78,6 +84,7 @@ Count(Customerid) as Total_Customers
 From [dbo].[CustomerData_CP]
 Group by subscriptiontype 
 Order by Total_Customers desc
+- basic169
 
 
 --3. Customers who Cancelled their Subscription within 6 Months--
