@@ -84,7 +84,8 @@ Count(Customerid) as Total_Customers
 From [dbo].[CustomerData_CP]
 Group by subscriptiontype 
 Order by Total_Customers desc
-- basic169
+
+- basic 16921
 
 
 --3. Customers who Cancelled their Subscription within 6 Months--
@@ -100,19 +101,25 @@ from [dbo].[CustomerData_CP]
 where Canceled = 1
 and SubscriptionEnd>=dateadd(month,-6,getdate())
 
+- 3385
+
+
 
 ---4. Average Subscription duration for all Customers---
 
 Select AVG(datediff(day,subscriptionstart,subscriptionend))
 as avg_subscription_duration
-from [dbo].[CustomerData_CP]
+from [dbo].[CustomerData_CP]365
 
+- 365
 
 ---5. Customers with subcription longer than 12 Months---
  
 Select count(customerid) as suscrption_12_month
 From [dbo].[CustomerData_CP]
-where subscriptionstart<Dateadd(month,-12, getdate())
+where subscriptionstart<Dateadd(month,-12, getdate())subscriptiontype	total_revenue
+
+- 33787
 
 
 ---6. CALCULATE SUBSCRIPTION TYPE BY REVENUE---
@@ -121,6 +128,11 @@ Select subscriptiontype,
 Sum(revenue) as total_revenue 
 From [dbo].[CustomerData_CP]
 Group by subscriptiontype
+
+ - Basic	 33,776735
+- Premium	16,899,064
+- Standard	16,864,376
+
 
 --7.FIND THE TOP 3 REGIONS BY SUBSCRIPTION--
 
@@ -131,6 +143,10 @@ Where Canceled = 1
 Group by Region
 Order by cancellation_count_top3
 
+West	5044
+South	5064
+North	5067
+
 
 ---8. FIND THE TOTAL NUMBER OF ACTIVE AND CANCELED SUBSCRIPTION---
 
@@ -138,7 +154,203 @@ select
 Sum(case when canceled = 1 then 1 else 0 end) as total_canceled,
 Sum(case when canceled = 0 then 1 else 0 end) as total_active
 From [dbo].[CustomerData_CP]
+
+Cancel  Renewal
+15175	  18612
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
