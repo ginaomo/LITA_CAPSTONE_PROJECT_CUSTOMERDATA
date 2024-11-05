@@ -1,6 +1,10 @@
 # LITA_CAPSTONE_PROJECT_CUSTOMERSDATA
 ---
 
+## Project Title: Segmentation and Customers' Subscription Analysis
+---
+
+
 ## Project Overview:
 This project focuses on analyzing customer data for a subscription service to identify key customer segments and trends. 
 The primary objective is to understand customer behavior, track subscription types, and identify important patterns in cancellations and renewals.
