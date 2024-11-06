@@ -157,11 +157,12 @@ Count(customerid) as cancellation_count_top3
 From [dbo].[CustomerData_CP] 
 Where Canceled = 1
 Group by Region
-Order by cancellation_count_top3
+Order by cancellation_count_top3 desc
 
-- West	5044
-- South	5064
 - North	5067
+- South	5064
+- West	5044
+
 
 
 ---8. FIND THE TOTAL NUMBER OF ACTIVE AND CANCELED SUBSCRIPTION---
