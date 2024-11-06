@@ -60,6 +60,8 @@ information on customer demographics, subscription behavior, revenue, and cancel
 
 ## Data Analysis
 ---
+This is where we include some basic lines of code/ queries or even some of the DAX expression used during analysis;
+
 ```SQL
 Select *from CustomerData_CP
 
