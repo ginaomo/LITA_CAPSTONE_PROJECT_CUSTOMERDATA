@@ -14,9 +14,13 @@
 
 [Exporatory Data Analysis](#exporatory-data-analysis)
 
-[Data Analysis and Findings](#data-analysis-and-findings)
+[Data Analysis](#data-analysis)
 
 [Data Visualization](#data-visualization)
+
+[Finding](#findings)
+
+[Recommendation](#recommendation)
 
 
 ## Project Overview:
@@ -27,13 +31,13 @@ The final deliverable will be an interactive Power BI dashboard that showcase th
 which will in turn affect the enhancement of the services render.
 
 
-## Source of Data:
+## Data Sources:
 ---
 The data used in this analysis is emanent from primary source such as customer subscription records, which include essential columns such as CustomerID, 
 CustomerName, Region, SubscriptionType, SubscriptionStart, SubscriptionEnd, Canceled, and Revenue. This data provides 
 information on customer demographics, subscription behavior, revenue, and cancellation history.
 
-## Tools to be Used:
+## Tools Used:
 - Excel Microsoft Excel[Download Here](https://www.microsoft.com)
       - For initial data exploration, 
       - creating pivot tables, 
@@ -45,7 +49,7 @@ information on customer demographics, subscription behavior, revenue, and cancel
  - Gitup- Github account[Download Here](https://www.github.com)
      - for portfolio building
      
-## Data Cleaning and Preparation Process
+## Data Cleaning and Preparation:
 ---
 - Duplicates remover:
    - Check for duplicate rows in the dataset, especially in CustomerID or subscription records, and remove any redundancies.
@@ -54,6 +58,10 @@ information on customer demographics, subscription behavior, revenue, and cancel
    - I checked for uniformity in categorical fields like SubscriptionType and Region.
    - Data Transformation: Calculate new fields, such as subscription duration   .
    - Active Status: Create an indicator for active subscriptions based on SubscriptionEnd and Canceled columns.
+     
+## Exporatory Data Analysis
+
+     
  
 
 
@@ -103,7 +111,7 @@ from [dbo].[CustomerData_CP]
 where Canceled = 1
 and SubscriptionEnd>=dateadd(month,-6,getdate())
 
-- 3385
+ - 3385
 
 
 
@@ -121,7 +129,7 @@ Select count(customerid) as suscrption_12_month
 From [dbo].[CustomerData_CP]
 where subscriptionstart<Dateadd(month,-12, getdate())subscriptiontype	total_revenue
 
-- 33787
+ - 33787
 
 
 ---6. CALCULATE SUBSCRIPTION TYPE BY REVENUE---
@@ -145,9 +153,9 @@ Where Canceled = 1
 Group by Region
 Order by cancellation_count_top3
 
-West	5044
-South	5064
-North	5067
+- West	5044
+- South	5064
+- North	5067
 
 
 ---8. FIND THE TOTAL NUMBER OF ACTIVE AND CANCELED SUBSCRIPTION---
@@ -157,13 +165,27 @@ Sum(case when canceled = 1 then 1 else 0 end) as total_canceled,
 Sum(case when canceled = 0 then 1 else 0 end) as total_active
 From [dbo].[CustomerData_CP]
 
-Cancel  Renewal
-15175	  18612
+Cancelled  Renewaled
+15175	     18612
 ```
 
 
 
 
+## Data visualization:
+---
+
+
+
+
+Findings:
+---
+
+
+
+
+Recommendation:
+---
 
 
 
