@@ -1,4 +1,4 @@
-# LITA_CAPSTONE_PROJECT_CUSTOMERSDATA
+# LITA_CAPSTONE_PROJECT_CUSTOMERDATA
 ---
 
 ## Project Title: Segmentation and Customers' Subscription Analysis
