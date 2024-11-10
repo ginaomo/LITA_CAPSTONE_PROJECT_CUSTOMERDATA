@@ -169,6 +169,7 @@ Order by cancellation_count_top3 desc
 
 select 
 Sum(case when canceled = 1 then 1 else 0 end) as total_canceled,
+
 Sum(case when canceled = 0 then 1 else 0 end) as total_active
 From [dbo].[CustomerData_CP]
 
@@ -184,6 +185,11 @@ Cancelled  Active
 
 
 
+![PIVOT TABLE CUSTOMER GITUP](https://github.com/user-attachments/assets/ef56ba71-8523-4e6b-8314-f81f6507517e)
+
+
+
+![CUSTOMERDATA DASHEDBOARD](https://github.com/user-attachments/assets/beb108c6-2275-4647-add3-e801cfb62ac1)
 
 Findings:
 ---
