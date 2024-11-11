@@ -180,17 +180,14 @@ Cancelled  Active
 
 
 
+![CUSTOMERDATA PIVOT TABLES](https://github.com/user-attachments/assets/47ef73e2-4fe8-439a-b2b5-c61b0af7c685)
+
+
+
+
+
 ## Data visualization:
 ---
-
-
-
-![PIVOT TABLE CUSTOMER GITUP](https://github.com/user-attachments/assets/ef56ba71-8523-4e6b-8314-f81f6507517e)
-
-
-
-
-
 
 
 
