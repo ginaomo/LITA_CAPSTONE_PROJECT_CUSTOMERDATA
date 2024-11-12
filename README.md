@@ -230,8 +230,34 @@ Findings:
 - Premium: $16,899,064
 - Standard: $16,864,376
 - Total revenue: $67,540,176 (aligns with total revenue)
-- This overview gives a clear picture of subscription types, customer distribution, and revenue breakdown across regions
 
+ This overview gives a clear picture of subscription types, customer distribution, and revenue breakdown across regions
+
+ Below is a detail tabular representation of the 20 unique Customer analysis using their unique name
+
+|Serial No|Customer name|Total Customerid|Revenue generated($)|Region Covered|Subscription type|Renewal|Month|
+|---------|-------------|----------------|--------------------|--------------|-----------------|-------|-----|
+|1        |Alex         |1690            |3,377,675           |East          | Basic           |1690   |March|
+|2        |Anna         |1700            |3,398,288           |West          |Standard         |1700   |December|
+|3        |Chris        |1692            |3,351,226           |North         |Basic            |0      |January|
+|4        |Dan          |1680            |3,354,858           |East          |Basic            |1680   |July   |
+|5        |Elia         |1679            |3,346,887           |South         |Premmium         |0      |June|
+|6        |Eva          |1692            |3,384,539           |South         |Premium          |0      |October|
+|7        |Grace        |1687            |3,385,349           |West          |Standard         |0      |April|
+|8        |James        |1673            |3,345,833           |North         |Basic            |1673   |May|
+|9        |Jane         |1693            |3,395,374           |South         |Premium          |0      |February|
+|10       |John         |1693            |3,378,897           |North         |Basic            |1693   |January|
+|11       |Liam         |1718            |3,437,444           |East          |Basic            |1718   |November|
+|12       |Maria        |1662            |3,326,162           |West          |Standard         |0      |April|
+|13       |Mike         |1714            |3,427,436           |East          |Basic            |1714   |July|
+|14       |Nina         |1695            |3,399,895           |West          |Standard         |0      |August|
+|15       |Paul         |1686            |3,361,350           |East          |Basic            |1686   |March|
+|16       |Rob          |1690            |3,376,796           |North         |Basic            |0      |May|
+|17       |Sara         |1676            |3,354,682           |West          |Standard         |1676   |August|
+|18       |Sophia       |1699            |3,414,995           |South         |Premium          |1699   |June|
+|19       |Tom          |1685            |3,365,221           |North         |Basic            |0      |September|
+|20       |Zoe          |1683            |3,357,269           |South         |Premium          |1683   |February|
+|Total    |             |                |67,540,176          |              |                 |18612  |        |
 
 
 
