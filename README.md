@@ -200,29 +200,43 @@ Findings:
 ---
  In the analysis of the data given the following was found
 
-- The total number of subscription customerid is 33787
 
-- Total Revenue is $67,540,176 approximately  $68Million
 
-- Total number of Renewal is 18612
+1. Total Subscriptions and Revenue:
 
-- Total number of inactive subscription is 15175
+- Unique subscription customers: 33,787
+- Total revenue: $67,540,176 (approx. $68 million)
+- Subscription Renewals and Inactive Accounts:
 
-- There are three different Subscription type
-   i. basic with 16921 (50.08%)
-   ii. Premium with 8420 (24.92%)
-   iii. Standard with 8446(25%)
-- There are four Regions
-   i.East  with  8488 customerid
-  ii. North with 8433 customerid
-  iii.South with 8446 customerid
-  iv. West with 8420  customerid
-- Revenue by subscription type
-  i. Basic generated    $33,776735
-  ii. Premium generated $16,899,064
-  iii. Standard revenue is $16,864,376
-  WHICH SUMMED UP TO $67,540,176
-  
+- Total renewals: 18,612
+- Inactive subscriptions: 15,175
+
+2. Subscription Types:
+
+- Basic: 16,921 (50.08%)
+- Premium: 8,420 (24.92%)
+- Standard: 8,446 (25%)
+
+3. Regional Distribution:
+
+- East: 8,488 customers
+- North: 8,433 customers
+- South: 8,446 customers
+- West: 8,420 customers
+
+4. Revenue by Subscription Type:
+
+- Basic: $33,776,735
+- Premium: $16,899,064
+- Standard: $16,864,376
+- Total revenue: $67,540,176 (aligns with total revenue)
+- This overview gives a clear picture of subscription types, customer distribution, and revenue breakdown across regions
+
+
+
+
+
+
 
 
 
