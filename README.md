@@ -257,7 +257,7 @@ Findings:
 |18       |Sophia       |1699            |3,414,995           |South         |Premium          |1699   |June|
 |19       |Tom          |1685            |3,365,221           |North         |Basic            |0      |September|
 |20       |Zoe          |1683            |3,357,269           |South         |Premium          |1683   |February|
-|Total    |             |                |67,540,176          |              |                 |18612  |        |
+|Total    |             |33,787          |67,540,176          |              |                 |18,612 |        |
 
 
 
