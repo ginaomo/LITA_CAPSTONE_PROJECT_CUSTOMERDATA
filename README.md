@@ -263,6 +263,33 @@ Findings:
 
 
 
+Here’s a refined list of the top five customers from the analysis:
+
+- Liam
+
+Revenue: $3,437,444
+Renewal Count: 1718
+
+- Mike
+
+Revenue: $3,427,436
+Renewal Count: 1714
+
+- Sophia
+
+Revenue: $3,414,995
+Renewal Count: 1699
+
+- Anna
+
+Revenue: $3,398,288
+Renewal Count: 1700
+Alex
+
+Revenue: $3,377,675
+Renewal Count: 1690
+
+
 
 
 ##Conclusion:
